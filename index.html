@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Отчетность</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+  <div class="mobile"></div>
+  <div class="help-box">
+    <div class="lbo box">
+      <div class="lbo__inside">
+        <div class="lbo__inside-27"></div>
+        <div class="lbo__inside-32"></div>
+      </div>
+    </div>
+    <div class="s27 box">
+      <div class="s27__inside">
+        <span class="typeP">Контрактация: </span><span class="number">70%</span><br>
+        <span class="typeP">Касса: </span><span class="number">3300</span><span class="typeP"> млн.руб.</span><br>
+        <span class="typeP">Освоение: </span><span class="number">3000</span><span class="typeP"> млн.руб.</span><br>
+        <span class="typeP">Аванс: </span><span class="number">1800</span><span class="typeP"> млн.руб.</span>
+      </div>
+    </div>
+    <div class="s32 box">
+      <div class="s32__inside">
+        <span class="typeP">Контрактация: </span><span class="number">80%</span><br>
+        <span class="typeP">Касса: </span><span class="number">45%</span><br>
+        <span class="typeP">Освоение: </span><span class="number">57%</span><br>
+        <span class="typeP">Аванс: </span><span class="number">24%</span>
+      </div>
+    </div>
+  </div>
+  <div class="help-box">
+    <div class="gk-pir" id="gk-pir">
+      <div class="gk__inside gk__total"><br>17</div>
+      <div class="gk__inside gk__zak"><br>7</div>
+      <div class="gk__inside gk__done"><br>3</div>
+    </div>
+    <div class="gk-smr" id="gk-smr">
+      <div class="gk__inside gk__total"><br>25</div>
+      <div class="gk__inside gk__zak"><br>15</div>
+      <div class="gk__inside gk__done"><br>7</div>
+    </div>
+  </div>
+  <figure class="highcharts-figure">
+    <div id="container"></div>
+    <div id="container2"></div>
+  </figure>
+  <div class="help-box2">
+    <div class="button" id="button1">Вопросы для руководителя</div>
+    <div class="button" id="button2">Вопросы для министра</div>
+  </div>
+  <div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="modal-name"></h2>
+      </div>
+      <div class="modal-body" id="modal-body">
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

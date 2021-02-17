@@ -1,0 +1,616 @@
+ body {
+   margin: 0;
+   background-color: rgba(192, 192, 192, 0.2);
+ }
+
+ .help-box {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 15px 30px 0 30px;
+ }
+
+ .box {
+   width: 32%;
+   height: 200px;
+   border: deepskyblue solid 3px;
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .lbo::before {
+   display: block;
+   content: "ЛБО СМР";
+   margin-left: 30%;
+   margin-top: 10px;
+   font-size: 40px;
+ }
+
+ .s27::before {
+   display: block;
+   content: "27";
+   margin-left: 46%;
+   margin-top: 10px;
+   font-size: 40px;
+ }
+
+ .s32::before {
+   display: block;
+   content: "32";
+   margin-left: 46%;
+   margin-top: 10px;
+   font-size: 40px;
+ }
+
+ .s27__inside {
+   width: 97%;
+   height: 94px;
+   border: deepskyblue solid 2px;
+   margin-left: 1%;
+   margin-top: 33px;
+ }
+
+ .s32__inside {
+   width: 97%;
+   height: 94px;
+   border: deepskyblue solid 2px;
+   margin-left: 1%;
+   margin-top: 33px;
+ }
+
+ .typeP {
+   line-height: 45px;
+   font-size: 28px;
+   margin-left: 10px;
+ }
+
+ .number {
+   line-height: 45px;
+   font-size: 28px;
+   color: #3CB371;
+ }
+
+ .lbo__inside {
+   display: flex;
+   width: 98%;
+   height: 140px;
+   justify-content: space-around;
+   margin-top: 10px;
+ }
+
+ .lbo__inside-27 {
+   width: 120px;
+   border: deepskyblue solid 2px;
+   height: 80px;
+   margin-top: 35px;
+   text-align: center;
+ }
+
+ .lbo__inside-32 {
+   width: 120px;
+   border: deepskyblue solid 2px;
+   height: 80px;
+   margin-top: 35px;
+   text-align: center;
+ }
+
+ .lbo__inside-27::before {
+   display: block;
+   content: "27";
+   font-size: 28px;
+   margin-top: -33px;
+ }
+
+ .lbo__inside-32::before {
+   display: block;
+   content: "32";
+   font-size: 28px;
+   margin-top: -33px;
+ }
+
+ .lbo__inside-27::after {
+   display: block;
+   content: "3200 млн.руб.";
+   font-size: 23px;
+   margin-top: 15px;
+ }
+
+ .lbo__inside-32::after {
+   display: block;
+   content: "-";
+   font-size: 23px;
+   margin-top: 25px;
+ }
+
+ .back {
+   margin-top: 20px;
+   margin-left: 34px;
+   margin-bottom: 5px;
+   width: 50px;
+   height: 15px;
+ }
+
+ .back::before {
+   display: inline-block;
+   position: absolute;
+   content: "";
+   border: solid black;
+   border-width: 0 3px 3px 0;
+   padding: 5px;
+   transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+ }
+
+ .back::after {
+   display: inline-block;
+   position: absolute;
+   content: "";
+   width: 50px;
+   height: 4px;
+   background-color: black;
+   margin-top: 4.5px;
+ }
+
+ .back:hover {
+   cursor: pointer;
+ }
+
+ table {
+   border: deepskyblue solid 2px;
+   border-collapse: collapse;
+   width: 95%;
+   height: 400px;
+   margin-top: 40px;
+   margin-left: 30px;
+ }
+
+ th {
+   border: deepskyblue solid 1px;
+   font-size: 20px;
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ td {
+   border: deepskyblue solid 1px;
+ }
+
+ .objects {
+   font-size: 20px;
+   text-align: center;
+ }
+
+ .obj1 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj1 .kt1 {
+   background-color: red;
+ }
+
+ .obj1 .kt2 {
+   background-color: yellow;
+ }
+
+ .obj1 .kt3 {
+   background-color: green;
+ }
+
+ .obj1 .kt4 {
+   background-color: lightgrey;
+ }
+
+ .obj1 .kt5 {
+   background-color: lightgrey;
+ }
+
+ .obj1 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj1 .kt7 {
+   background-color: lightgrey;
+ }
+
+
+ .obj2 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj2 .kt2 {
+   background-color: yellow;
+ }
+
+ .obj2 .kt3 {
+   background-color: yellow;
+ }
+
+ .obj2 .kt4 {
+   background-color: green;
+ }
+
+ .obj2 .kt5 {
+   background-color: lightgrey;
+ }
+
+ .obj2 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj2 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .obj3 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj3 .kt2 {
+   background-color: red;
+ }
+
+ .obj3 .kt3 {
+   background-color: green;
+ }
+
+ .obj3 .kt4 {
+   background-color: lightgrey;
+ }
+
+ .obj3 .kt5 {
+   background-color: lightgrey;
+ }
+
+ .obj3 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj3 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .obj4 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj4 .kt1 {
+   background-color: red;
+ }
+
+ .obj4 .kt2 {
+   background-color: yellow;
+ }
+
+ .obj4 .kt3 {
+   background-color: yellow;
+ }
+
+ .obj4 .kt4 {
+   background-color: lightgrey;
+ }
+
+ .obj4 .kt5 {
+   background-color: lightgrey;
+ }
+
+ .obj4 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj4 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .obj5 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj5 .kt2 {
+   background-color: green;
+ }
+
+ .obj5 .kt3 {
+   background-color: green;
+ }
+
+ .obj5 .kt4 {
+   background-color: green;
+ }
+
+ .obj5 .kt5 {
+   background-color: lightgrey;
+ }
+
+ .obj5 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj5 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .obj6 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj6 .kt2 {
+   background-color: yellow;
+ }
+
+ .obj6 .kt3 {
+   background-color: yellow;
+ }
+
+ .obj6 .kt4 {
+   background-color: green;
+ }
+
+ .obj6 .kt5 {
+   background-color: green;
+ }
+
+ .obj6 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj6 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .obj7 {
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .obj7 .kt3 {
+   background-color: red;
+ }
+
+ .obj7 .kt4 {
+   background-color: red;
+ }
+
+ .obj7 .kt5 {
+   background-color: yellow;
+ }
+
+ .obj7 .kt6 {
+   background-color: lightgrey;
+ }
+
+ .obj7 .kt7 {
+   background-color: lightgrey;
+ }
+
+ .color1 {
+   width: 250px;
+   height: 40px;
+   font-size: 19px;
+   line-height: 40px;
+   font-weight: bold;
+   text-align: center;
+   border: solid black 2px;
+   margin-bottom: 30px;
+   background-color: rgba(0, 191, 255, 0.2);
+ }
+
+ .color2 {
+   width: 250px;
+   height: 40px;
+   font-size: 19px;
+   line-height: 40px;
+   font-weight: bold;
+   text-align: center;
+   border: solid black 2px;
+   margin-left: 30px;
+   background-color: red;
+ }
+
+ .color3 {
+   width: 250px;
+   height: 40px;
+   font-size: 19px;
+   line-height: 40px;
+   text-align: center;
+   font-weight: bold;
+   border: solid black 2px;
+   margin-left: 30px;
+   background-color: yellow;
+ }
+
+ .color4 {
+   width: 250px;
+   height: 40px;
+   font-size: 19px;
+   line-height: 40px;
+   font-weight: bold;
+   text-align: center;
+   border: solid black 2px;
+   margin-left: 30px;
+   background-color: green;
+ }
+
+ .color5 {
+   width: 250px;
+   height: 40px;
+   font-size: 19px;
+   line-height: 40px;
+   font-weight: bold;
+   text-align: center;
+   border: solid black 2px;
+   margin-left: 30px;
+   background-color: lightgrey;
+ }
+
+ @media (max-width: 600px) {
+   .mobile2 {
+     display: block;
+     width: 100%;
+     height: 100%;
+     background-color: grey;
+     background-image: url(../images/rotate.png);
+     background-repeat: no-repeat;
+     background-size: 350px 350px;
+     background-position: 10px 150px;
+     position: fixed;
+     z-index: 100;
+     top: 0px;
+     left: 0px;
+   }
+
+   .help-box {
+     display: none;
+   }
+
+   table {
+     display: none;
+   }
+ }
+
+ @media (min-width: 600px) and (max-width: 1280px) {
+
+   .help-box {
+     margin: 15px 15px 0 15px;
+   }
+
+   .box {
+     width: 31%;
+     height: 133px;
+   }
+
+   .lbo::before {
+     margin-left: 32%;
+     margin-top: 10px;
+     font-size: 22px;
+   }
+
+   .s27::before {
+     margin-left: 45%;
+     margin-top: 10px;
+     font-size: 25px;
+   }
+
+   .s32::before {
+     margin-left: 45%;
+     margin-top: 10px;
+     font-size: 25px;
+   }
+
+   .s27__inside {
+     width: 95%;
+     margin-left: 5px;
+     margin-top: 20px;
+     height: 67px;
+   }
+
+   .s32__inside {
+     width: 95%;
+     margin-left: 5px;
+     margin-top: 20px;
+     height: 67px;
+   }
+
+   .typeP {
+     line-height: 30px;
+     font-size: 16px;
+     margin-left: 10px;
+   }
+
+   .number {
+     line-height: 30px;
+     font-size: 16px;
+   }
+
+   .lbo__inside {
+     width: 98%;
+     height: 100px;
+     margin-top: 5px;
+     margin-left: 1%;
+   }
+
+   .lbo__inside-27 {
+     width: 48%;
+     height: 60px;
+     margin-top: 25px;
+   }
+
+   .lbo__inside-32 {
+     width: 48%;
+     height: 60px;
+     margin-top: 25px;
+   }
+
+   .lbo__inside-27::before {
+     font-size: 20px;
+     margin-top: -29px;
+   }
+
+   .lbo__inside-32::before {
+     font-size: 20px;
+     margin-top: -29px;
+   }
+
+   .lbo__inside-27::after {
+     font-size: 18px;
+     margin-top: 25px;
+   }
+
+   .lbo__inside-32::after {
+     font-size: 18px;
+     margin-top: 23px;
+   }
+
+   table {
+     border: deepskyblue solid 2px;
+     border-collapse: collapse;
+     width: 98%;
+     height: 400px;
+     margin-top: 20px;
+     margin-left: 1%;
+   }
+
+   th {
+     font-size: 15px;
+   }
+
+
+   .objects {
+     font-size: 15px;
+   }
+
+   .color1 {
+     width: 20%;
+     height: 40px;
+     font-size: 13px;
+     line-height: 40px;
+     font-weight: bold;
+     text-align: center;
+     border: solid black 2px;
+     margin-bottom: 30px;
+     background-color: rgba(0, 191, 255, 0.2);
+   }
+
+   .color2 {
+     width: 20%;
+     height: 40px;
+     font-size: 13px;
+   }
+
+   .color3 {
+     width: 20%;
+     height: 44px;
+     font-size: 13px;
+     line-height: 15px;
+     padding-top: 5px;
+     box-sizing: border-box;
+   }
+
+   .color4 {
+     width: 20%;
+     height: 40px;
+     font-size: 13px;
+   }
+
+   .color5 {
+     width: 20%;
+     height: 40px;
+     font-size: 13px;
+   }
+ }
