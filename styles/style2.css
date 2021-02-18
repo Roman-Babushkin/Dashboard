@@ -178,6 +178,10 @@ td {
   text-align: center;
 }
 
+.objects:hover {
+  cursor: pointer;
+}
+
 .obj1 {
   background-color: rgba(0, 191, 255, 0.2);
 }
