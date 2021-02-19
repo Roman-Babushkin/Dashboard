@@ -72,3 +72,110 @@ p {
  .back:hover {
    cursor: pointer;
  }
+
+ .now {
+  width: 2px;
+  height: 670px;
+  position: absolute;
+  background-color: red;
+  margin-top: -35px;
+}
+
+.now::after {
+  content: "";
+}
+
+.nowDate {
+  color: red;
+  font-size: 20px;
+}
+
+.boxForGraf {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 9%;
+    width: 89%;
+    margin-top: 15px;
+}
+
+.names {
+  width: 9%;
+  height: 590px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.field {
+    width: 89%;
+    height: 600px;
+    border: solid black;
+    margin-right: 1%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-width: 0 3px 3px 3px;
+    background: repeating-linear-gradient(to right, white, white 8.13%, black 8.33%);
+    padding-top: 15px;
+}
+
+.kt {
+    height: 50px;
+    margin-top: 45px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.point {
+    text-align: center;
+    font-weight: bold;
+    border-right: 2px solid black;
+}
+
+.kt1 {
+    width: 23%;
+    margin-top: 0;
+    margin-left: 3%;
+    background-color: lightblue;
+}
+
+.kt2 {
+    width: 27%;
+    margin-left: 20%;
+    background-color: lightblue;
+}
+
+.kt3 {
+    width: 20%;
+    margin-left: 40%;
+    background-color: lightblue;
+}
+
+.kt4 {
+    width: 19%;
+    margin-left: 55%;
+    background-color: lightblue;
+}
+
+
+.kt5 {
+    width: 11%;
+    margin-left: 75%;
+    background-color: lightblue;
+}
+
+.kt6 {
+    width: 9%;
+    margin-left: 90%;
+    background-color: lightblue;
+}

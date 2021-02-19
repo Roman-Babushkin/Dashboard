@@ -1,524 +1,267 @@
-body {
-  z-index: 0;
-  margin: 0;
-  background-color: rgba(192, 192, 192, 0.2);
-}
-
-.help-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 15px 15px 0 15px;
-}
-
-.box {
-  width: 30%;
-  height: 200px;
-  border: deepskyblue solid 3px;
-  background-color: rgba(0, 191, 255, 0.2);
-}
-
-.lbo::before {
-  display: block;
-  content: "ЛБО";
-  margin-left: 42%;
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-.s27::before {
-  display: block;
-  content: "27";
-  margin-left: 46%;
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-.s32::before {
-  display: block;
-  content: "32";
-  margin-left: 46%;
-  margin-top: 10px;
-  font-size: 30px;
-}
-
-.s27__inside {
-  width: 95%;
-  height: 140px;
-  border: deepskyblue solid 2px;
-  margin-left: 2%;
-  margin-top: 3px;
-}
-
-.s32__inside {
-  width: 95%;
-  height: 140px;
-  border: deepskyblue solid 2px;
-  margin-left: 2%;
-  margin-top: 3px;
-}
-
-.typeP {
-  line-height: 35px;
-  font-size: 25px;
-  margin-left: 10px;
-}
-
-.number {
-  line-height: 35px;
-  font-size: 25px;
-  color: #3CB371;
-}
-
-.lbo__inside {
-  display: flex;
-  width: 98%;
-  height: 140px;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.lbo__inside-27 {
-  width: 40%;
-  border: deepskyblue solid 2px;
-  height: 80px;
-  margin-top: 35px;
-  text-align: center;
-}
-
-.lbo__inside-32 {
-  width: 40%;
-  border: deepskyblue solid 2px;
-  height: 80px;
-  margin-top: 35px;
-  text-align: center;
-}
-
-.lbo__inside-27::before {
-  display: block;
-  content: "27";
-  font-size: 25px;
-  margin-top: -29px;
-}
-
-.lbo__inside-32::before {
-  display: block;
-  content: "32";
-  font-size: 25px;
-  margin-top: -29px;
-}
-
-.lbo__inside-27::after {
-  display: block;
-  content: "6000 млн.руб.";
-  font-size: 23px;
-  margin-top: 15px;
-}
-
-.lbo__inside-32::after {
-  display: block;
-  content: "-";
-  font-size: 23px;
-  margin-top: 25px;
-}
-
-.gk-pir {
-  display: flex;
-  justify-content: space-around;
-  width: 48%;
-  height: 170px;
-  border: deepskyblue solid 3px;
-  background-color: rgba(0, 191, 255, 0.2);
-}
-
-.gk-pir::before {
-  position: absolute;
-  content: "ГК ПИР";
-  font-size: 35px;
-}
-
-.gk-pir:hover {
-  cursor: pointer;
-}
-
-.gk-smr {
-  display: flex;
-  justify-content: space-around;
-  height: 170px;
-  width: 48%;
-  border: deepskyblue solid 3px;
-  background-color: rgba(0, 191, 255, 0.2);
-}
-
-.gk-smr::before {
-  position: absolute;
-  content: "ГК СМР";
-  font-size: 35px;
-}
-
-.gk-smr:hover {
-  cursor: pointer;
-}
-
-.gk__inside {
-  margin-top: 42px;
-  width: 170px;
-  height: 100px;
-  border: deepskyblue solid 2px;
-  font-size: 30px;
-  text-align: center;
-  line-height: 50px;
-}
-
-.gk__total::before {
-  position: relative;
-  content: "Всего:";
-  margin-top: 5px;
-}
-
-.gk__zak::before {
-  position: relative;
-  content: "Заключено:";
-  font-size: 30px;
-  margin-top: 5px;
-}
-
-.gk__done::before {
-  position: relative;
-  content: "Выполнено:";
-  font-size: 30px;
-  margin-top: 5px;
-}
-
-.highcharts-figure,
-.highcharts-data-table table {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  margin-top: 30px;
-}
-
-.highcharts-data-table table {
-  font-family: Verdana, sans-serif;
-  border-collapse: collapse;
-  border: 1px solid #EBEBEB;
-  margin: 10px auto;
-  text-align: center;
-  width: 100%;
-}
-
-.highcharts-data-table caption {
-  padding: 1em 0;
-  font-size: 1.2em;
-  color: #555;
-}
-
-.highcharts-data-table th {
-  font-weight: 600;
-  padding: 0.5em;
-}
-
-.highcharts-data-table td,
-.highcharts-data-table th,
-.highcharts-data-table caption {
-  padding: 0.5em;
-}
-
-.highcharts-data-table thead tr,
-.highcharts-data-table tr:nth-child(even) {
-  background: #f8f8f8;
-}
-
-.highcharts-data-table tr:hover {
-  background: #f1f7ff;
-}
-
-.highcharts-credits {
-  display: none;
-}
-
-#container2 {
-  width: 47%;
-  height: 400px;
-}
-
-#container {
-  width: 47%;
-  height: 400px;
-}
-
-.button {
-  width: 300px;
-  height: 50px;
-  font-size: 25px;
-  border: deepskyblue solid 3px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 25px;
-  background-color: rgba(0, 191, 255, 0.2);
-  margin-bottom: 30px;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-#button2 {
-  margin-left: 15px;
-}
-
-.help-box2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 15px 30px 0 30px;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-.modal-content {
-  position: relative;
-  background-color: #87CEEB;
-  margin: auto;
-  padding: 0;
-  border: 5px solid deepskyblue;
-  width: 50%;
-  max-height: 65vh;
-  overflow: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0
-  }
-
-  to {
-    top: 0;
-    opacity: 1
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0
-  }
-
-  to {
-    top: 0;
-    opacity: 1
-  }
-}
-
-
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #4682B4;
-  color: white;
-}
-
-.modal-body {
-  padding: 2px 16px;
-}
-
-@media (max-width: 600px) {
-  .mobile {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: grey;
-    background-image: url(../images/rotate.png);
-    background-repeat: no-repeat;
-    background-size: 350px 350px;
-    background-position: 10px 150px;
-    position: fixed;
-    z-index: 100;
-    top: 0px;
-    left: 0px;
-  }
-
-  .help-box {
-    display: none;
-  }
-
-  .help-box2 {
-    display: none;
-  }
-
-  .highcharts-figure {
-    display: none;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1280px) {
   body {
     z-index: 0;
-    position: relative;
     margin: 0;
     background-color: rgba(192, 192, 192, 0.2);
   }
 
+  .help-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 15px 0 15px;
+  }
+
   .box {
     width: 30%;
-    height: 170px;
+    height: 200px;
+    border: deepskyblue solid 3px;
+    background-color: rgba(0, 191, 255, 0.2);
   }
 
   .lbo::before {
+    display: block;
+    content: "ЛБО";
     margin-left: 42%;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 30px;
   }
 
   .s27::before {
+    display: block;
+    content: "27";
     margin-left: 46%;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 30px;
   }
 
   .s32::before {
+    display: block;
+    content: "32";
     margin-left: 46%;
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 30px;
   }
 
   .s27__inside {
     width: 95%;
-    height: 120px;
+    height: 140px;
+    border: deepskyblue solid 2px;
     margin-left: 2%;
     margin-top: 3px;
-    padding-top: 5px;
-    box-sizing: border-box;
   }
 
   .s32__inside {
     width: 95%;
-    height: 120px;
+    height: 140px;
+    border: deepskyblue solid 2px;
     margin-left: 2%;
     margin-top: 3px;
-    padding-top: 5px;
-    box-sizing: border-box;
   }
 
   .typeP {
-    line-height: 25px;
-    font-size: 18px;
+    line-height: 35px;
+    font-size: 25px;
     margin-left: 10px;
   }
 
   .number {
-    line-height: 25px;
-    font-size: 18px;
+    line-height: 35px;
+    font-size: 25px;
+    color: #3CB371;
   }
 
   .lbo__inside {
+    display: flex;
     width: 98%;
+    height: 140px;
+    justify-content: space-around;
+    margin-top: 10px;
   }
 
   .lbo__inside-27 {
     width: 40%;
-    height: 60px;
+    border: deepskyblue solid 2px;
+    height: 80px;
+    margin-top: 35px;
+    text-align: center;
   }
 
   .lbo__inside-32 {
     width: 40%;
-    height: 60px;
+    border: deepskyblue solid 2px;
+    height: 80px;
+    margin-top: 35px;
+    text-align: center;
   }
 
+  .lbo__inside-27::before {
+    display: block;
+    content: "27";
+    font-size: 25px;
+    margin-top: -29px;
+  }
+
+  .lbo__inside-32::before {
+    display: block;
+    content: "32";
+    font-size: 25px;
+    margin-top: -29px;
+  }
 
   .lbo__inside-27::after {
-    font-size: 20px;
-    margin-top: 5px;
-  }
-
-  .lbo__inside-32::after {
-    font-size: 20px;
+    display: block;
+    content: "6000 млн.руб.";
+    font-size: 23px;
     margin-top: 15px;
   }
 
+  .lbo__inside-32::after {
+    display: block;
+    content: "-";
+    font-size: 23px;
+    margin-top: 25px;
+  }
+
   .gk-pir {
+    display: flex;
+    justify-content: space-around;
     width: 48%;
-    height: 120px;
+    height: 170px;
+    border: deepskyblue solid 3px;
+    background-color: rgba(0, 191, 255, 0.2);
   }
 
   .gk-pir::before {
-    font-size: 28px;
+    position: absolute;
+    content: "ГК ПИР";
+    font-size: 35px;
+  }
+
+  .gk-pir:hover {
+    cursor: pointer;
   }
 
   .gk-smr {
+    display: flex;
+    justify-content: space-around;
+    height: 170px;
     width: 48%;
-    height: 120px;
+    border: deepskyblue solid 3px;
+    background-color: rgba(0, 191, 255, 0.2);
   }
 
   .gk-smr::before {
-    font-size: 28px;
+    position: absolute;
+    content: "ГК СМР";
+    font-size: 35px;
+  }
+
+  .gk-smr:hover {
+    cursor: pointer;
   }
 
   .gk__inside {
-    width: 30%;
-    font-size: 20px;
-    height: 60px;
-    line-height: 30px;
+    margin-top: 42px;
+    width: 170px;
+    height: 100px;
+    border: deepskyblue solid 2px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
   }
 
   .gk__total::before {
-    font-size: 20px;
+    position: relative;
+    content: "Всего:";
+    margin-top: 5px;
   }
 
   .gk__zak::before {
-    font-size: 20px;
+    position: relative;
+    content: "Заключено:";
+    font-size: 30px;
+    margin-top: 5px;
   }
 
   .gk__done::before {
-    font-size: 20px;
+    position: relative;
+    content: "Выполнено:";
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  .highcharts-figure,
+  .highcharts-data-table table {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+  }
+
+  .highcharts-data-table td,
+  .highcharts-data-table th,
+  .highcharts-data-table caption {
+    padding: 0.5em;
+  }
+
+  .highcharts-data-table thead tr,
+  .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+
+  .highcharts-data-table tr:hover {
+    background: #f1f7ff;
+  }
+
+  .highcharts-credits {
+    display: none;
   }
 
   #container2 {
     width: 47%;
-    height: 270px;
+    height: 400px;
   }
 
   #container {
     width: 47%;
-    height: 270px;
+    height: 400px;
   }
 
   .button {
-    width: 49%;
-    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border: deepskyblue solid 3px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 191, 255, 0.2);
+    margin-bottom: 30px;
+  }
+
+  .button:hover {
+    cursor: pointer;
   }
 
   #button2 {
@@ -528,12 +271,433 @@ body {
   .help-box2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 65%;
-    margin: 15px 15px 0 15px;
+    justify-content: flex-start;
+    margin: 15px 30px 0 30px;
   }
 
   .modal {
-    padding-top: 70px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
   }
-}
+
+
+  .modal-content {
+    position: relative;
+    background-color: #87CEEB;
+    margin: auto;
+    padding: 0;
+    border: 5px solid deepskyblue;
+    width: 50%;
+    max-height: 65vh;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+
+  @-webkit-keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
+  }
+
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #4682B4;
+    color: white;
+  }
+
+  .modal-body {
+    padding: 2px 16px;
+  }
+
+  @media (max-width: 567px) {
+    .mobile {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: grey;
+      background-position: 10px 150px;
+      position: fixed;
+      z-index: 100;
+      top: 0px;
+      left: 0px;
+    }
+
+    .mobile-image {
+      position: absolute;
+      top: calc(50% - 175px);
+      left: calc(50% - 175px);
+      width: 350px;
+      height: 350px;
+      background-image: url(../images/rotate.png);
+      background-repeat: no-repeat;
+      background-size: 350px 350px;
+    }
+
+    .help-box {
+      display: none;
+    }
+
+    .help-box2 {
+      display: none;
+    }
+
+    .highcharts-figure {
+      display: none;
+    }
+  }
+
+  @media (min-width: 567px) and (max-width: 800px) {
+    body {
+      z-index: 0;
+      position: relative;
+      margin: 0;
+      background-color: rgba(192, 192, 192, 0.2);
+    }
+
+    .box {
+      width: 30%;
+      height: 170px;
+    }
+
+    .lbo::before {
+      margin-left: 42%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s27::before {
+      margin-left: 46%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s32::before {
+      margin-left: 46%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s27__inside {
+      width: 95%;
+      height: 120px;
+      margin-left: 2%;
+      margin-top: 3px;
+      padding-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .s32__inside {
+      width: 95%;
+      height: 120px;
+      margin-left: 2%;
+      margin-top: 3px;
+      padding-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .typeP {
+      line-height: 20px;
+      font-size: 14px;
+      margin-left: 10px;
+      margin: 0;
+    }
+
+    .number {
+      line-height: 20px;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .lbo__inside {
+      width: 98%;
+    }
+
+    .lbo__inside-27 {
+      width: 40%;
+      height: 60px;
+    }
+
+    .lbo__inside-32 {
+      width: 40%;
+      height: 60px;
+    }
+
+
+    .lbo__inside-27::after {
+      font-size: 17px;
+      margin-top: 5px;
+    }
+
+    .lbo__inside-32::after {
+      font-size: 17px;
+      margin-top: 15px;
+    }
+
+    .gk-pir {
+      width: 48%;
+      height: 120px;
+    }
+
+    .gk-pir::before {
+      font-size: 28px;
+    }
+
+    .gk-smr {
+      width: 48%;
+      height: 120px;
+    }
+
+    .gk-smr::before {
+      font-size: 28px;
+    }
+
+    .gk__inside {
+      width: 30%;
+      font-size: 20px;
+      height: 60px;
+      line-height: 30px;
+    }
+
+    .gk__total::before {
+      font-size: 15px;
+    }
+
+    .gk__zak::before {
+      font-size: 15px;
+    }
+
+    .gk__done::before {
+      font-size: 15px;
+    }
+
+    #container2 {
+      width: 47%;
+      height: 270px;
+    }
+
+    #container {
+      width: 47%;
+      height: 270px;
+    }
+
+    .button {
+      width: 49%;
+      font-size: 13px;
+    }
+
+    #button2 {
+      margin-left: 15px;
+    }
+
+    .help-box2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 65%;
+      margin: 15px 15px 0 15px;
+    }
+
+    .modal {
+      padding-top: 70px;
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1280px) {
+    body {
+      z-index: 0;
+      position: relative;
+      margin: 0;
+      background-color: rgba(192, 192, 192, 0.2);
+    }
+
+    .box {
+      width: 30%;
+      height: 170px;
+    }
+
+    .lbo::before {
+      margin-left: 42%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s27::before {
+      margin-left: 46%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s32::before {
+      margin-left: 46%;
+      margin-top: 5px;
+      font-size: 30px;
+    }
+
+    .s27__inside {
+      width: 95%;
+      height: 120px;
+      margin-left: 2%;
+      margin-top: 3px;
+      padding-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .s32__inside {
+      width: 95%;
+      height: 120px;
+      margin-left: 2%;
+      margin-top: 3px;
+      padding-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .typeP {
+      line-height: 25px;
+      font-size: 18px;
+      margin-left: 10px;
+    }
+
+    .number {
+      line-height: 25px;
+      font-size: 18px;
+    }
+
+    .lbo__inside {
+      width: 98%;
+    }
+
+    .lbo__inside-27 {
+      width: 40%;
+      height: 60px;
+    }
+
+    .lbo__inside-32 {
+      width: 40%;
+      height: 60px;
+    }
+
+
+    .lbo__inside-27::after {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+
+    .lbo__inside-32::after {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+
+    .gk-pir {
+      width: 48%;
+      height: 120px;
+    }
+
+    .gk-pir::before {
+      font-size: 28px;
+    }
+
+    .gk-smr {
+      width: 48%;
+      height: 120px;
+    }
+
+    .gk-smr::before {
+      font-size: 28px;
+    }
+
+    .gk__inside {
+      width: 30%;
+      font-size: 20px;
+      height: 60px;
+      line-height: 30px;
+    }
+
+    .gk__total::before {
+      font-size: 20px;
+    }
+
+    .gk__zak::before {
+      font-size: 20px;
+    }
+
+    .gk__done::before {
+      font-size: 20px;
+    }
+
+    #container2 {
+      width: 47%;
+      height: 270px;
+    }
+
+    #container {
+      width: 47%;
+      height: 270px;
+    }
+
+    .button {
+      width: 49%;
+      font-size: 20px;
+    }
+
+    #button2 {
+      margin-left: 15px;
+    }
+
+    .help-box2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 65%;
+      margin: 15px 15px 0 15px;
+    }
+
+    .modal {
+      padding-top: 70px;
+    }
+  }
