@@ -27,7 +27,7 @@ var questionForMinistr = `<p>Вопрос для министра 1</p>
     <p>Вопрос для министра 7</p>
     <p>Вопрос для министра 8</p>`
 
-var numberQMin = 5;
+var numberQMin = 8;
 
 var contr27 = 50;
 
@@ -250,19 +250,19 @@ document.getElementById("lineAv27").style.background = "linear-gradient(to right
 
 document.getElementById("contr32").innerHTML = contr32 + "%";
 
-document.getElementById("lineContr32").style.background = "linear-gradient(to right, rgb(54, 85, 138) " + contr32 + "%, lightgrey " + contr32 + "%)";
+document.getElementById("lineContr32").style.background = "linear-gradient(to right, rgb(37, 155, 209) " + contr32 + "%, lightgrey " + contr32 + "%)";
 
 document.getElementById("kassa32").innerHTML = kassa32 + "%";
 
-document.getElementById("lineKassa32").style.background = "linear-gradient(to right, rgb(54, 85, 138) " + kassa32 + "%, lightgrey " + kassa32 + "%)";
+document.getElementById("lineKassa32").style.background = "linear-gradient(to right, rgb(37, 155, 209) " + kassa32 + "%, lightgrey " + kassa32 + "%)";
 
 document.getElementById("osv32").innerHTML = osv32 + "%";
 
-document.getElementById("lineOsv32").style.background = "linear-gradient(to right, rgb(54, 85, 138) " + osv32 + "%, lightgrey " + osv32 + "%)";
+document.getElementById("lineOsv32").style.background = "linear-gradient(to right, rgb(37, 155, 209) " + osv32 + "%, lightgrey " + osv32 + "%)";
 
 document.getElementById("av32").innerHTML = av32 + "%";
 
-document.getElementById("lineAv32").style.background = "linear-gradient(to right, rgb(54, 85, 138) " + av32 + "%, lightgrey " + av32 + "%)";
+document.getElementById("lineAv32").style.background = "linear-gradient(to right, rgb(37, 155, 209) " + av32 + "%, lightgrey " + av32 + "%)";
 
 document.getElementById("totalPir").innerHTML = '<br><span class="number2">' + totalPir + '</span>';
 
