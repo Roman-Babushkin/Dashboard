@@ -8,8 +8,6 @@ var start = new Date(2021, 0, 1);
 
 let a = Math.round((time-start)/86400000);
 
-console.log(a);
-
 let b = a/3.65;
 
 let c= b+7;
