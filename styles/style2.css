@@ -1,20 +1,36 @@
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-color: rgba(192, 192, 192, 0.2);
+  font-family: Bitter;
+  font-weight: normal;
 }
 
 .help-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 15px 30px 0 30px;
+  margin: 30px 30px 0 30px;
 }
 
 .box {
   width: 32%;
   height: 200px;
-  border: deepskyblue solid 3px;
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
+  border-radius: 15px;
 }
 
 .lbo::before {
@@ -44,7 +60,6 @@ body {
 .s27__inside {
   width: 97%;
   height: 94px;
-  border: deepskyblue solid 2px;
   margin-left: 1%;
   margin-top: 33px;
 }
@@ -52,21 +67,39 @@ body {
 .s32__inside {
   width: 97%;
   height: 94px;
-  border: deepskyblue solid 2px;
   margin-left: 1%;
   margin-top: 33px;
 }
 
 .typeP {
   line-height: 45px;
-  font-size: 28px;
-  margin-left: 10px;
+  font-size: 22px;
+  margin-left: 5px;
+  color: black;
+}
+
+.typeP2 {
+  line-height: 15px;
+  font-size: 20px;
+  color: black;
+  font-weight: normal;
 }
 
 .number {
   line-height: 45px;
-  font-size: 28px;
-  color: #3CB371;
+  font-size: 22px;
+  color: rgb(54, 85, 138);
+  margin-left: 15px;
+}
+
+.sline {
+  display: inline-block;
+  width: 35%;
+  height: 12px;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .lbo__inside {
@@ -79,16 +112,17 @@ body {
 
 .lbo__inside-27 {
   width: 120px;
-  border: deepskyblue solid 2px;
   height: 80px;
-  margin-top: 35px;
+  margin-top: 15px;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(54, 85, 138);
+  line-height: 30px;
 }
 
 .lbo__inside-32 {
   width: 120px;
-  border: deepskyblue solid 2px;
   height: 80px;
   margin-top: 35px;
   text-align: center;
@@ -98,8 +132,10 @@ body {
   display: block;
   content: "27";
   font-size: 28px;
-  margin-top: -33px;
-  margin-bottom: 30px;
+  margin-top: -13px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: black;
 }
 
 .lbo__inside-32::before {
@@ -150,22 +186,24 @@ body {
 }
 
 table {
-  border: deepskyblue solid 2px;
+  border: rgba(0, 0, 0, 0.2) solid 2px;
   border-collapse: collapse;
-  width: 95%;
+  width: 97%;
   height: 400px;
   margin-top: 40px;
   margin-left: 30px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 th {
-  border: deepskyblue solid 1px;
+  border: rgba(0, 0, 0, 0.2) solid 2px;
   font-size: 20px;
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 td {
-  border: deepskyblue solid 1px;
+  border: rgba(0, 0, 0, 0.2) solid 2px;
 }
 
 .objects {
@@ -178,19 +216,19 @@ td {
 }
 
 .obj1 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj1 .kt1 {
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .obj1 .kt2 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj1 .kt3 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj1 .kt4 {
@@ -207,19 +245,19 @@ td {
 
 
 .obj2 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj2 .kt2 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj2 .kt3 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj2 .kt4 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj2 .kt5 {
@@ -231,15 +269,15 @@ td {
 }
 
 .obj3 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj3 .kt2 {
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .obj3 .kt3 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj3 .kt4 {
@@ -255,19 +293,19 @@ td {
 }
 
 .obj4 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj4 .kt1 {
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .obj4 .kt2 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj4 .kt3 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj4 .kt4 {
@@ -283,19 +321,19 @@ td {
 }
 
 .obj5 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj5 .kt2 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj5 .kt3 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj5 .kt4 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj5 .kt5 {
@@ -307,23 +345,23 @@ td {
 }
 
 .obj6 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj6 .kt2 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj6 .kt3 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj6 .kt4 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj6 .kt5 {
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .obj6 .kt6 {
@@ -331,19 +369,19 @@ td {
 }
 
 .obj7 {
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .obj7 .kt3 {
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .obj7 .kt4 {
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .obj7 .kt5 {
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .obj7 .kt6 {
@@ -357,9 +395,9 @@ td {
   line-height: 40px;
   font-weight: bold;
   text-align: center;
-  border: solid black 2px;
+  border-radius: 15px;
   margin-bottom: 30px;
-  background-color: rgba(0, 191, 255, 0.2);
+  background-color: white;
 }
 
 .color2 {
@@ -369,9 +407,9 @@ td {
   line-height: 40px;
   font-weight: bold;
   text-align: center;
-  border: solid black 2px;
+  border-radius: 15px;
   margin-left: 30px;
-  background-color: red;
+  background-color: rgb(54, 85, 138);
 }
 
 .color3 {
@@ -381,9 +419,9 @@ td {
   line-height: 40px;
   text-align: center;
   font-weight: bold;
-  border: solid black 2px;
+  border-radius: 15px;
   margin-left: 30px;
-  background-color: yellow;
+  background-color: rgb(37, 155, 209);
 }
 
 .color4 {
@@ -393,9 +431,9 @@ td {
   line-height: 40px;
   font-weight: bold;
   text-align: center;
-  border: solid black 2px;
+  border-radius: 15px;
   margin-left: 30px;
-  background-color: green;
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .color5 {
@@ -405,7 +443,7 @@ td {
   line-height: 40px;
   font-weight: bold;
   text-align: center;
-  border: solid black 2px;
+  border-radius: 15px;
   margin-left: 30px;
   background-color: lightgrey;
 }
@@ -455,7 +493,7 @@ td {
   }
 
   .lbo::before {
-    margin-left: 32%;
+    margin-left: 20%;
     margin-top: 10px;
     font-size: 22px;
   }
@@ -475,26 +513,35 @@ td {
   .s27__inside {
     width: 95%;
     margin-left: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
     height: 67px;
   }
 
   .s32__inside {
     width: 95%;
     margin-left: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
     height: 67px;
   }
 
   .typeP {
-    line-height: 30px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 15px;
     margin-left: 3px;
   }
 
+  .typeP2 {
+    font-size: 15px;
+  }
+
   .number {
-    line-height: 30px;
-    font-size: 12px;
+    line-height: 18px;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .sline {
+    display: none;
   }
 
   .lbo__inside {
@@ -507,8 +554,9 @@ td {
   .lbo__inside-27 {
     width: 48%;
     height: 60px;
-    margin-top: 25px;
-    font-size: 18px;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .lbo__inside-32 {
@@ -519,7 +567,8 @@ td {
 
   .lbo__inside-27::before {
     font-size: 20px;
-    margin-top: -29px;
+    margin-top: -9px;
+    margin-bottom: 0;
   }
 
   .lbo__inside-32::before {
@@ -529,7 +578,7 @@ td {
 
   .lbo__inside-32::after {
     font-size: 18px;
-    margin-top: 23px;
+    margin-top: 13px;
   }
 
   table {
@@ -555,11 +604,7 @@ td {
     height: 40px;
     font-size: 13px;
     line-height: 40px;
-    font-weight: bold;
-    text-align: center;
-    border: solid black 2px;
     margin-bottom: 30px;
-    background-color: rgba(0, 191, 255, 0.2);
   }
 
   .color2 {
@@ -640,14 +685,23 @@ td {
   }
 
   .typeP {
-    line-height: 30px;
-    font-size: 16px;
-    margin-left: 10px;
+    line-height: 18px;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .typeP2 {
+    font-size: 15px;
   }
 
   .number {
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 18px;
+    font-size: 15px;
+    margin-left: 3px;
+  }
+
+  .sline {
+    display: none;
   }
 
   .lbo__inside {
@@ -660,7 +714,9 @@ td {
   .lbo__inside-27 {
     width: 48%;
     height: 60px;
-    margin-top: 25px;
+    margin-top: 13px;
+    font-size: 30px;
+    line-height: 27px;
   }
 
   .lbo__inside-32 {
@@ -671,7 +727,8 @@ td {
 
   .lbo__inside-27::before {
     font-size: 20px;
-    margin-top: -29px;
+    margin-top: -18px;
+    margin-bottom: 0;
   }
 
   .lbo__inside-32::before {
@@ -712,11 +769,6 @@ td {
     height: 40px;
     font-size: 13px;
     line-height: 40px;
-    font-weight: bold;
-    text-align: center;
-    border: solid black 2px;
-    margin-bottom: 30px;
-    background-color: rgba(0, 191, 255, 0.2);
   }
 
   .color2 {
@@ -727,7 +779,7 @@ td {
 
   .color3 {
     width: 20%;
-    height: 44px;
+    height: 40px;
     font-size: 13px;
     line-height: 15px;
     padding-top: 5px;
@@ -738,11 +790,54 @@ td {
     width: 20%;
     height: 40px;
     font-size: 13px;
+    line-height: 15px;
+    padding-top: 5px;
+    box-sizing: border-box;
   }
 
   .color5 {
     width: 20%;
     height: 40px;
     font-size: 13px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1800px) {
+  .box {
+    width: 32.5%;
+  }
+
+  .typeP {
+    line-height: 30px;
+    font-size: 16.5px;
+  }
+
+  .number {
+    line-height: 30px;
+    font-size: 16.5px;
+    margin-left: 3px;
+  }
+
+  .color1 {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .color2 {
+    font-size: 16px;
+  }
+
+  .color3 {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .color4 {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .color5 {
+    font-size: 16px;
   }
 }
