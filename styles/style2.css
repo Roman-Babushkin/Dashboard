@@ -83,6 +83,7 @@ body {
   height: 80px;
   margin-top: 35px;
   text-align: center;
+  font-size: 25px;
 }
 
 .lbo__inside-32 {
@@ -98,6 +99,7 @@ body {
   content: "27";
   font-size: 28px;
   margin-top: -33px;
+  margin-bottom: 30px;
 }
 
 .lbo__inside-32::before {
@@ -105,13 +107,6 @@ body {
   content: "32";
   font-size: 28px;
   margin-top: -33px;
-}
-
-.lbo__inside-27::after {
-  display: block;
-  content: "2100 млн.руб.";
-  font-size: 23px;
-  margin-top: 15px;
 }
 
 .lbo__inside-32::after {
@@ -513,6 +508,7 @@ td {
     width: 48%;
     height: 60px;
     margin-top: 25px;
+    font-size: 18px;
   }
 
   .lbo__inside-32 {
@@ -529,11 +525,6 @@ td {
   .lbo__inside-32::before {
     font-size: 20px;
     margin-top: -29px;
-  }
-
-  .lbo__inside-27::after {
-    font-size: 18px;
-    margin-top: 15px;
   }
 
   .lbo__inside-32::after {
