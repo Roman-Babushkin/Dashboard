@@ -1,3 +1,17 @@
+var contrSum = 230;
+
+var contrAv = 120;
+
+var contrDoneProc = 50;
+
+var contrDone = 115;
+
+var contrDay = 305;
+
+var contrStart = "01.01.2021";
+
+var contrEnd = "24.12.2021";
+
 document.getElementById("back").onclick = function() {
   window.location.href = 'gkpir.html';
 }
@@ -26,3 +40,19 @@ let y = time.getFullYear();
 let fullDate = d+'.'+m+'.'+y;
 
 nowDate.innerHTML = fullDate;
+
+document.getElementById("contrSum").innerHTML = contrSum + '<span class="typeP"> млн. рублей</span>';
+
+document.getElementById("contrAv").innerHTML = contrAv + '<span class="typeP"> млн. рублей</span>';
+
+document.getElementById("contrDoneProc").innerHTML = contrDoneProc + "%";
+
+document.getElementById("contrDone").innerHTML = contrDone + '<span class="typeP"> млн. рублей</span>';
+
+document.getElementById("contrDoneLine").style.background = "linear-gradient(to right, rgb(54, 85, 138) " + contrDoneProc + "%, lightgrey " + contrDoneProc + "%)";
+
+document.getElementById("contrDay").innerHTML = contrDay + '<span class="typeP"> дней</span>';
+
+document.getElementById("contrStart").innerHTML = contrStart;
+
+document.getElementById("contrEnd").innerHTML = contrEnd;
