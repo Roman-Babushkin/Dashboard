@@ -476,7 +476,7 @@ body {
   }
 }
 
-@media (min-width: 567px) and (max-width: 800px) {
+@media (min-width: 567px) and (max-width: 811px) {
   body {
     z-index: 0;
     position: relative;
@@ -703,7 +703,7 @@ body {
   }
 }
 
-@media (min-width: 800px) and (max-width: 1280px) {
+@media (min-width: 811px) and (max-width: 1280px) {
   .logo-image {
     width: 100px;
     height: 78px;
