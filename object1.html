@@ -5,42 +5,43 @@
   <meta charset="utf-8">
   <title>Объект 1</title>
   <link rel="stylesheet" type="text/css" href="./styles/style4.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 
 <body>
   <div class="back" id="back"></div>
+  <div class="nameOfObject">Объект 1</div>
   <div class="help-box">
-    <div class="box">Сумма контракта:<br>300 млн.руб.</div>
-    <div class="box">Аванс:<br>
-      120 млн.руб.
-    </div>
-    <div class="box">Выполнено:<br>150 млн.руб. <p class="numberG">50%</p>
+    <div class="box">Сумма контракта:<br><span class="number" id="contrSum"></span></div>
+    <div class="box">Аванс:<br><span class="number" id="contrAv"></span></div>
+    <div class="box">Выполнено:<br><span class="numberL" id="contrDoneProc"></span>
+      <div class="sline" id="contrDoneLine"></div><span class="number" id="contrDone"></span>
     </div>
   </div>
   <div class="help-box">
-    <div class="box">Срок реализации:<br>305 дней</div>
-    <div class="box box-date">Период реализации:<br>Начало:<p class="numberG"> 01.01.2021</p><br>Конец:<p class="numberR"> 01.11.2021</p>
+    <div class="box">Срок реализации:<br><span class="number" id="contrDay"></span></div>
+    <div class="box box-date">Период реализации:<br>Начало:<p class="numberDL" id="contrStart"></p><br>Конец:<p class="numberD" id="contrEnd"></p>
     </div>
   </div>
   <div class="dates"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span><span>11</span><span>12</span></div>
-    <div class="boxForGraf">
-        <div class="names"><span>КТ 1</span><span>КТ 2</span><span>КТ 3</span><span>КТ 4</span><span>КТ 5</span><span>КТ 6</span></div>
-        <div class="field">
-            <div class="now" id="now"></div>
-            <div class="kt1 kt">
-            </div>
-            <div class="kt2 kt">
-            </div>
-            <div class="kt3 kt">
-            </div>
-            <div class="kt4 kt">
-            </div>
-            <div class="kt5 kt">
-            </div>
-            <div class="kt6 kt">
-            </div>
-        </div>
+  <div class="boxForGraf">
+    <div class="names"><span>КТ 1</span><span>КТ 2</span><span>КТ 3</span><span>КТ 4</span><span>КТ 5</span><span>КТ 6</span></div>
+    <div class="field">
+      <div class="now" id="now"></div>
+      <div class="kt1 kt">
+      </div>
+      <div class="kt2 kt">
+      </div>
+      <div class="kt3 kt">
+      </div>
+      <div class="kt4 kt">
+      </div>
+      <div class="kt5 kt">
+      </div>
+      <div class="kt6 kt">
+      </div>
     </div>
-    <div class="nowDate" id="nowDate"></div>
+  </div>
+  <div class="nowDate" id="nowDate"></div>
   <script src="./scripts/script4.js"></script>
 </body>
