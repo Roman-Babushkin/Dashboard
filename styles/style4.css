@@ -1,11 +1,34 @@
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-color: rgba(192, 192, 192, 0.2);
+  font-family: Bitter;
+  font-weight: normal;
 }
 
 p {
-	margin: 0;
-	display: inline;
+  margin: 0;
+  display: inline;
+}
+
+.nameOfObject {
+  font-size: 70px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 .help-box {
@@ -19,61 +42,96 @@ p {
 .box {
   width: 32%;
   height: 150px;
-  border: deepskyblue solid 3px;
-  background-color: rgba(0, 191, 255, 0.2);
+  border-radius: 15px;
+  background-color: white;
   line-height: 50px;
   font-size: 35px;
   padding: 15px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.numberG {
-	color: green;
+.numberL {
+  color: rgb(37, 155, 209);
+  font-weight: bold;
+  font-size: 45px;
 }
 
-.numberR {
-	color: red;
+.number {
+  display: inline-block;
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 43px;
+}
+
+.numberD {
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.numberDL {
+  color: rgb(37, 155, 209);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.sline {
+  display: inline-block;
+  width: 35%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.typeP {
+  display: inline-block;
+  color: black;
+  font-weight: normal;
+  font-size: 28px;
+  margin-left: 5px;
 }
 
 .box-date {
-	font-size: 25px;
-	line-height: 35px;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 .back {
-   margin-top: 20px;
-   margin-left: 34px;
-   margin-bottom: 5px;
-   width: 50px;
-   height: 15px;
- }
+  margin-top: 20px;
+  margin-left: 34px;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 15px;
+}
 
- .back::before {
-   display: inline-block;
-   position: absolute;
-   content: "";
-   border: solid black;
-   border-width: 0 3px 3px 0;
-   padding: 5px;
-   transform: rotate(135deg);
-   -webkit-transform: rotate(135deg);
- }
+.back::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
- .back::after {
-   display: inline-block;
-   position: absolute;
-   content: "";
-   width: 50px;
-   height: 4px;
-   background-color: black;
-   margin-top: 4.5px;
- }
+.back::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin-top: 4.5px;
+}
 
- .back:hover {
-   cursor: pointer;
- }
+.back:hover {
+  cursor: pointer;
+}
 
- .now {
+.now {
   width: 2px;
   height: 670px;
   position: absolute;
@@ -97,11 +155,11 @@ p {
 }
 
 .dates {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 9%;
-    width: 89%;
-    margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 9%;
+  width: 89%;
+  margin-top: 15px;
 }
 
 .names {
@@ -118,64 +176,149 @@ p {
 }
 
 .field {
-    width: 89%;
-    height: 600px;
-    border: solid black;
-    margin-right: 1%;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    border-width: 0 3px 3px 3px;
-    background: repeating-linear-gradient(to right, white, white 8.13%, black 8.33%);
-    padding-top: 15px;
+  width: 89%;
+  height: 600px;
+  border: solid black;
+  margin-right: 1%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-width: 0 3px 3px 3px;
+  background: repeating-linear-gradient(to right, white, white 8.13%, black 8.33%);
+  padding-top: 15px;
 }
 
 .kt {
-    height: 50px;
-    margin-top: 45px;
-    border: 1px solid black;
-    display: flex;
+  height: 50px;
+  margin-top: 45px;
+  border: 1px solid black;
+  display: flex;
+  background-color: rgb(54, 85, 138);
 }
 
 .point {
-    text-align: center;
-    font-weight: bold;
-    border-right: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  border-right: 2px solid black;
 }
 
 .kt1 {
-    width: 23%;
-    margin-top: 0;
-    margin-left: 3%;
-    background-color: lightblue;
+  width: 23%;
+  margin-top: 0;
+  margin-left: 3%;
 }
 
 .kt2 {
-    width: 27%;
-    margin-left: 20%;
-    background-color: lightblue;
+  width: 27%;
+  margin-left: 20%;
 }
 
 .kt3 {
-    width: 20%;
-    margin-left: 40%;
-    background-color: lightblue;
+  width: 20%;
+  margin-left: 40%;
 }
 
 .kt4 {
-    width: 19%;
-    margin-left: 55%;
-    background-color: lightblue;
+  width: 19%;
+  margin-left: 55%;
 }
 
 
 .kt5 {
-    width: 11%;
-    margin-left: 75%;
-    background-color: lightblue;
+  width: 11%;
+  margin-left: 75%;
 }
 
 .kt6 {
-    width: 9%;
-    margin-left: 90%;
-    background-color: lightblue;
+  width: 9%;
+  margin-left: 90%;
+}
+
+@media (max-width: 800px) {
+  .nameOfObject {
+    font-size: 35px;
+  }
+
+  .number {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .box {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .box-date {
+    font-size: 20px;
+  }
+
+  .typeP {
+    font-size: 15px;
+  }
+
+  .numberL {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .sline {
+    display: none;
+  }
+
+  .numberD {
+    font-size: 15px;
+  }
+
+  .numberDL {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .nameOfObject {
+    font-size: 45px;
+  }
+
+  .number {
+    font-size: 35px;
+    margin-top: 15px;
+  }
+
+  .box {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .box-date {
+    font-size: 23px;
+  }
+
+  .typeP {
+    font-size: 25px;
+  }
+
+  .numberL {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+
+  .sline {
+    width: 60%;
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .numberD {
+    font-size: 20px;
+  }
+
+  .numberDL {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .box {
+    height: 180px;
+  }
 }

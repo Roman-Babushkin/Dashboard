@@ -335,8 +335,9 @@ body {
 
 .numberQ {
   width: 30%;
-  font-size: 45px;
+  font-size: 55px;
   margin-left: 15px;
+  margin-top: 5px;
 }
 
 .button:hover {
@@ -663,17 +664,17 @@ body {
   }
 
   .button {
+    height: 45px;
     width: 49%;
     font-size: 11px;
     line-height: 13px;
     margin: 0;
     padding-left: 3px;
-    padding-top: 10px;
   }
 
   .numberQ {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   #button2 {
@@ -695,6 +696,10 @@ body {
 
   #numberQLead {
     margin-left: 33px;
+  }
+
+  .help-box2 {
+    padding-top: 5px;
   }
 }
 
@@ -865,10 +870,10 @@ body {
   }
 
   .button {
+    height: 55px;
     width: 49%;
     font-size: 14px;
     line-height: 20px;
-    padding-top: 10px;
   }
 
   .numberQ {
@@ -888,6 +893,7 @@ body {
     width: 33%;
     min-width: 0;
     margin: 15px 15px 0 15px;
+    padding-top: 5px;
   }
 
   .modal {
@@ -1056,6 +1062,11 @@ body {
   }
 
   .numberQ {
+    font-size: 50px;
     margin-top: 7px;
+  }
+
+  #numberQLead {
+    margin-left: 70px;
   }
 }
