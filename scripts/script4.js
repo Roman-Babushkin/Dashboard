@@ -12,6 +12,30 @@ var contrStart = "01.01.2021";
 
 var contrEnd = "24.12.2021";
 
+var kt1Day = 23;
+
+var kt1Start = 3;
+
+var kt2Day = 27;
+
+var kt2Start = 20;
+
+var kt3Day = 20;
+
+var kt3Start = 40;
+
+var kt4Day = 19;
+
+var kt4Start = 55;
+
+var kt5Day = 11;
+
+var kt5Start = 75;
+
+var kt6Day = 9;
+
+var kt6Start = 90;
+
 document.getElementById("back").onclick = function() {
   window.location.href = 'gkpir.html';
 }
@@ -56,3 +80,27 @@ document.getElementById("contrDay").innerHTML = contrDay + '<span class="typeP">
 document.getElementById("contrStart").innerHTML = contrStart;
 
 document.getElementById("contrEnd").innerHTML = contrEnd;
+
+document.querySelector(".kt1").style.width = kt1Day + "%";
+
+document.querySelector(".kt1").style.marginLeft = kt1Start + "%";
+
+document.querySelector(".kt2").style.width = kt2Day + "%";
+
+document.querySelector(".kt2").style.marginLeft = kt2Start + "%";
+
+document.querySelector(".kt3").style.width = kt3Day + "%";
+
+document.querySelector(".kt3").style.marginLeft = kt3Start + "%";
+
+document.querySelector(".kt4").style.width = kt4Day + "%";
+
+document.querySelector(".kt4").style.marginLeft = kt4Start + "%";
+
+document.querySelector(".kt5").style.width = kt5Day + "%";
+
+document.querySelector(".kt5").style.marginLeft = kt5Start + "%";
+
+document.querySelector(".kt6").style.width = kt6Day + "%";
+
+document.querySelector(".kt6").style.marginLeft = kt6Start + "%";

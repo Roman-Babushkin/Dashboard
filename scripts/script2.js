@@ -10,7 +10,7 @@ var osvPir32 = 42;
 
 var lboPir27 = 2100;
 
-let massiveColor = {
+let massiveColorPir = {
   1: [0, 1, 1, 1, 1, 1],
   2: [0, 0, 2, 3, 4, 4],
   3: [0, 0, 1, 3, 3, 4],
@@ -55,7 +55,7 @@ function colors() {
     for (i = 1; i < 7; i++) {
       el = "kt" + i
       col = x.querySelector(`.${el}`);
-      ob = massiveColor[h];
+      ob = massiveColorPir[h];
       if (ob[i - 1] === 0) {
         col.style.background = "white";
       } else if (ob[i - 1] === 1) {

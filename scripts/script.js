@@ -2,21 +2,29 @@ var DataGrafPlanPir = [150, 180, 250, 100, 280, 330, 350, 220, 250, 140, 310, 18
 
 var DataGrafFaktPir = [120, 150, 280, 150, 200, 150, 250, 280];
 
+var DataGrafPlanPirNak = [150, 330, 580, 680, 960, 1290, 1640, 1860, 2110, 2250, 2560, 2740];
+
+var DataGrafFaktPirNak = [120, 270, 550, 700, 900, 1050, 1300, 1580];
+
 var DataGrafPlanSmr = [250, 280, 150, 200, 380, 230, 250, 320, 150, 240, 210, 280];
 
 var DataGrafFaktSmr = [180, 250, 180, 250, 270, 180, 230, 280, 140, 200];
 
+var DataGrafPlanSmrNak = [250, 530, 680, 880, 1260, 1490, 1740, 2060, 2210, 2450, 2660, 2940];
 
-var questionForLeader = `<p>Вопрос 1</p>
-    <p>Вопрос 2</p>
-    <p>Вопрос 3</p>
-    <p>Вопрос 4</p>
-    <p>Вопрос 5</p>
-    <p>Вопрос 6</p>
-    <p>Вопрос 7</p>
-    <p>Вопрос 8</p>`;
+var DataGrafFaktSmrNak = [180, 430, 610, 860, 1130, 1310, 1540, 1820, 1960, 2160];
 
-var numberQLead = 9;
+
+var questionForLeader = `<p>Я узнал, что у меня</p>
+    <p>Есть ограмная семья</p>
+    <p>И тропинка и лесок</p>
+    <p>В поле каждый колосок</p>
+    <p>Речка, небо голубое -</p>
+    <p>Это все мое - родное</p>
+    <p>Это родина моя,</p>
+    <p>Всех люблю на свете я!</p>`;
+
+var numberQLead = 8;
 
 var questionForMinistr = `<p>Вопрос для министра 1</p>
     <p>Вопрос для министра 2</p>
@@ -63,59 +71,178 @@ var zakSmr = 15;
 
 var doneSmr = 7;
 
-var lbo27 = 6000;
+var lbo27 = 6500;
+
+
+var btn3 = document.getElementById("nakopPir");
+
+var btn4 = document.getElementById("normalPir");
+
+var btn5 = document.getElementById("nakopSmr");
+
+var btn6 = document.getElementById("normalSmr");
 
 Highcharts.chart('container', {
 
-  title: {
-    text: 'План/факт по ГК ПИР'
-  },
-
-  yAxis: {
     title: {
-      text: ""
-    }
-  },
+      text: 'План/факт по ГК ПИР'
+    },
 
-  xAxis: {
-    accessibility: {
-      rangeDescription: ''
-    }
-  },
-
-  plotOptions: {
-    series: {
-      label: {
-        connectorAllowed: false
-      },
-      pointStart: 1
-    }
-  },
-
-  series: [{
-    name: 'План',
-    data: DataGrafPlanPir
-  }, {
-    name: 'Факт',
-    data: DataGrafFaktPir
-  }],
-
-  responsive: {
-    rules: [{
-      condition: {
-        maxWidth: 500
-      },
-      chartOptions: {
-        legend: {
-          layout: 'horizontal',
-          align: 'center',
-          verticalAlign: 'bottom'
-        }
+    yAxis: {
+      title: {
+        text: ""
       }
-    }]
-  }
+    },
 
-});
+    xAxis: {
+      accessibility: {
+        rangeDescription: ''
+      }
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1
+      }
+    },
+
+    series: [{
+      name: 'План',
+      data: DataGrafPlanPir
+    }, {
+      name: 'Факт',
+      data: DataGrafFaktPir
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
+
+btn3.onclick = function() {
+
+  Highcharts.chart('container', {
+
+    title: {
+      text: 'План/факт по ГК ПИР'
+    },
+
+    yAxis: {
+      title: {
+        text: ""
+      }
+    },
+
+    xAxis: {
+      accessibility: {
+        rangeDescription: ''
+      }
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1
+      }
+    },
+
+    series: [{
+      name: 'План',
+      data: DataGrafPlanPir
+    }, {
+      name: 'Факт',
+      data: DataGrafFaktPir
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
+}
+
+btn4.onclick = function() {
+
+  Highcharts.chart('container', {
+
+    title: {
+      text: 'План/факт по ГК ПИР'
+    },
+
+    yAxis: {
+      title: {
+        text: ""
+      }
+    },
+
+    xAxis: {
+      accessibility: {
+        rangeDescription: ''
+      }
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1
+      }
+    },
+
+    series: [{
+      name: 'План',
+      data: DataGrafPlanPirNak
+    }, {
+      name: 'Факт',
+      data: DataGrafFaktPirNak
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
+}
 
 Highcharts.chart('container2', {
 
@@ -168,6 +295,114 @@ Highcharts.chart('container2', {
   }
 
 });
+
+btn5.onclick = function() {
+  Highcharts.chart('container2', {
+
+  title: {
+    text: 'План/факт по ГК СМР'
+  },
+
+  yAxis: {
+    title: {
+      text: ""
+    }
+  },
+
+  xAxis: {
+    accessibility: {
+      rangeDescription: ''
+    }
+  },
+
+  plotOptions: {
+    series: {
+      label: {
+        connectorAllowed: false
+      },
+      pointStart: 1
+    }
+  },
+
+  series: [{
+    name: 'План',
+    data: DataGrafPlanSmr
+  }, {
+    name: 'Факт',
+    data: DataGrafFaktSmr
+  }],
+
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500
+      },
+      chartOptions: {
+        legend: {
+          layout: 'horizontal',
+          align: 'center',
+          verticalAlign: 'bottom'
+        }
+      }
+    }]
+  }
+
+});
+}
+
+btn6.onclick = function() {
+  Highcharts.chart('container2', {
+
+  title: {
+    text: 'План/факт по ГК СМР'
+  },
+
+  yAxis: {
+    title: {
+      text: ""
+    }
+  },
+
+  xAxis: {
+    accessibility: {
+      rangeDescription: ''
+    }
+  },
+
+  plotOptions: {
+    series: {
+      label: {
+        connectorAllowed: false
+      },
+      pointStart: 1
+    }
+  },
+
+  series: [{
+    name: 'План',
+    data: DataGrafPlanSmrNak
+  }, {
+    name: 'Факт',
+    data: DataGrafFaktSmrNak
+  }],
+
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500
+      },
+      chartOptions: {
+        legend: {
+          layout: 'horizontal',
+          align: 'center',
+          verticalAlign: 'bottom'
+        }
+      }
+    }]
+  }
+
+});
+}
 
 var modal = document.getElementById('myModal');
 
