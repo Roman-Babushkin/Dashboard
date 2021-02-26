@@ -202,35 +202,7 @@ p {
 }
 
 .kt1 {
-  width: 23%;
   margin-top: 0;
-  margin-left: 3%;
-}
-
-.kt2 {
-  width: 27%;
-  margin-left: 20%;
-}
-
-.kt3 {
-  width: 20%;
-  margin-left: 40%;
-}
-
-.kt4 {
-  width: 19%;
-  margin-left: 55%;
-}
-
-
-.kt5 {
-  width: 11%;
-  margin-left: 75%;
-}
-
-.kt6 {
-  width: 9%;
-  margin-left: 90%;
 }
 
 @media (max-width: 800px) {
