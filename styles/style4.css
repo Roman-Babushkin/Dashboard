@@ -1,13 +1,13 @@
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Regular.ttf');
+  src: url('./fonts/Bitter-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Black.ttf');
+  src: url('./fonts/Bitter-Black.ttf');
   font-weight: bold;
   font-style: normal;
 }
@@ -25,7 +25,7 @@ p {
 }
 
 .nameOfObject {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
   width: 100%;
   text-align: center;
@@ -40,12 +40,12 @@ p {
 }
 
 .box {
-  width: 32%;
+  width: 18%;
   height: 150px;
   border-radius: 15px;
   background-color: white;
-  line-height: 50px;
-  font-size: 35px;
+  line-height: 40px;
+  font-size: 25px;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -53,20 +53,27 @@ p {
 .numberL {
   color: rgb(37, 155, 209);
   font-weight: bold;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .number {
   display: inline-block;
   color: rgb(54, 85, 138);
   font-weight: bold;
-  font-size: 43px;
+  font-size: 35px;
 }
 
 .numberD {
   color: rgb(54, 85, 138);
   font-weight: bold;
   font-size: 25px;
+  margin-left: 5px;
+}
+
+.numberDBox {
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 19px;
   margin-left: 5px;
 }
 
@@ -79,7 +86,7 @@ p {
 
 .sline {
   display: inline-block;
-  width: 35%;
+  width: 70%;
   height: 30px;
   border-radius: 10px;
   margin: 0 5px;
@@ -89,8 +96,20 @@ p {
   display: inline-block;
   color: black;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 22px;
   margin-left: 5px;
+}
+
+.typeB {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin: 0;
+}
+
+.typeL {
+  font-size: 18px;
+  color: rgb(54, 85, 138);
 }
 
 .box-date {
@@ -131,81 +150,81 @@ p {
   cursor: pointer;
 }
 
-.now {
-  width: 2px;
-  height: 670px;
-  position: absolute;
-  background-color: red;
-  margin-top: -35px;
-}
-
-.now::after {
-  content: "";
-}
-
-.nowDate {
-  color: red;
-  font-size: 20px;
-}
-
-.boxForGraf {
-  display: flex;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.dates {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 9%;
-  width: 89%;
-  margin-top: 15px;
-}
-
-.names {
-  width: 9%;
-  height: 590px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.field {
-  width: 89%;
-  height: 600px;
-  border: solid black;
-  margin-right: 1%;
-  margin-top: 5px;
-  margin-bottom: 30px;
-  border-width: 0 3px 3px 3px;
-  background: repeating-linear-gradient(to right, white, white 8.13%, black 8.33%);
+.box2 {
+  padding-left: 15px;
   padding-top: 15px;
+  width: 24.5%;
+  height: 120px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 18px;
+  line-height: 23px;
+  box-sizing: border-box;
 }
 
 .kt {
+  width: 70%;
+  border-radius: 15px;
   height: 50px;
-  margin-top: 45px;
-  border: 1px solid black;
+  margin-left: 15%;
+  margin-top: 15px;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  background-color: white;
   display: flex;
-  background-color: rgb(54, 85, 138);
+  justify-content: space-between;
 }
 
-.point {
-  text-align: center;
+.kt:hover {
+  cursor: pointer;
+}
+
+.procKt {
+  color: rgb(54, 85, 138);
   font-weight: bold;
-  border-right: 2px solid black;
 }
 
-.kt1 {
-  margin-top: 0;
+.kt_menu {
+  display: none;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 30px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+#kt8Line {
+  margin-bottom: 50px;
+}
+
+#kt_menu8 {
+  margin-top: -45px;
+}
+
+.kt_menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 40px;
+}
+
+span {
+  margin: 0;
 }
 
 @media (max-width: 800px) {
+  .help-box {
+    flex-wrap: wrap;
+  }
+
   .nameOfObject {
     font-size: 35px;
   }
@@ -216,8 +235,11 @@ p {
   }
 
   .box {
+    width: 45%;
     font-size: 25px;
     line-height: 25px;
+    margin-top: 5px;
+    height: 95px;
   }
 
   .box-date {
@@ -244,21 +266,59 @@ p {
   .numberDL {
     font-size: 15px;
   }
+
+  .box2 {
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 110px;
+    font-size: 13px;
+    line-height: 19px;
+    width: 45%;
+    margin-top: 5px;
+  }
+
+  .typeB {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .numberDBox {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .typeL {
+    font-size: 15px;
+  }
+
+  .kt {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .kt_menu {
+    font-size: 20px;
+  }
+
+  .procKt {
+    line-height: 50px;
+  }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 801px) and (max-width: 1280px) {
   .nameOfObject {
     font-size: 45px;
   }
 
   .number {
-    font-size: 35px;
-    margin-top: 15px;
+    font-size: 25px;
+    margin-top: 5px;
   }
 
   .box {
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 17px;
+    height: 140px;
   }
 
   .box-date {
@@ -266,30 +326,77 @@ p {
   }
 
   .typeP {
-    font-size: 25px;
+    font-size: 15px;
+    margin-left: 0;
   }
 
   .numberL {
-    font-size: 35px;
+    font-size: 22px;
     margin-top: 10px;
   }
 
   .sline {
-    width: 60%;
+    width: 47%;
     height: 20px;
     margin-top: 2px;
   }
 
   .numberD {
-    font-size: 20px;
+    display: block;
+    margin: 0;
+    line-height: 17px;
+    font-size: 17px;
   }
 
   .numberDL {
+    display: block;
+    margin: 0;
+    line-height: 17px;
+    font-size: 17px;
+  }
+
+  .box-date {
+    font-size: 18px;
+  }
+
+  .box2 {
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 140px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .typeB {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .numberDBox {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .typeL {
+    font-size: 15px;
+  }
+
+  .kt {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .kt_menu {
     font-size: 20px;
+  }
+
+  .procKt {
+    line-height: 50px;
   }
 }
 
-@media (max-width: 1800px) {
+@media (min-width: 1281px) and (max-width: 1800px) {
   .box {
     height: 180px;
   }

@@ -1,13 +1,13 @@
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Regular.ttf');
+  src: url('./fonts/Bitter-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Black.ttf');
+  src: url('./fonts/Bitter-Black.ttf');
   font-weight: bold;
   font-style: normal;
 }
@@ -20,71 +20,19 @@ body {
   font-weight: normal;
 }
 
-.nakopPir {
+.buttonGraf {
   width: 200px;
   height: 50px;
   line-height: 50px;
   border-radius: 15px;
   background-color: white;
   margin-left: 30px;
-  margin-top: 15px;
   font-weight: bold;
   text-align: center;
   color: rgb(54, 85, 138);
 }
 
-.nakopPir:hover {
-  cursor: pointer;
-}
-
-.normalPir {
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 15px;
-  background-color: white;
-  margin-left: 30px;
-  margin-top: 15px; 
-  font-weight: bold;
-  text-align: center;
-  color: rgb(54, 85, 138);
-}
-
-.normalPir:hover {
-  cursor: pointer;
-}
-
-.nakopSmr {
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 15px;
-  background-color: white;
-  margin-left: 30px;
-  margin-top: 15px;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(54, 85, 138);
-}
-
-.nakopSmr:hover {
-  cursor: pointer;
-}
-
-.normalSmr {
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 15px;
-  background-color: white;
-  margin-left: 30px;
-  margin-top: 15px; 
-  font-weight: bold;
-  text-align: center;
-  color: rgb(54, 85, 138);
-}
-
-.normalSmr:hover {
+.buttonGraf:hover {
   cursor: pointer;
 }
 
@@ -103,6 +51,11 @@ body {
   background-color: red;
   margin-top: 18px;
   text-align: center;
+  border-radius: 25px;
+}
+
+.bankR:hover {
+  cursor: pointer;
 }
 
 .bankY {
@@ -114,52 +67,18 @@ body {
   background-color: yellow;
   margin-top: 18px;
   text-align: center;
+  border-radius: 25px;
 }
 
-.logo-image {
-  width: 210px;
-  height: 180px;
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  background-size: 165px 165px;
-  background-color: rgba(54, 85, 138, 0.9);
-  background-position: -1px 7.5px;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.logo-image:after {
-  position: absolute;
-  top: 125px;
-  left: 161px;
-  content: "";
-  height: 55px;
-  width: 456px;
-  background-color: rgba(37, 155, 209, 0.8);
-}
-
-.logo {
-  display: flex;
-}
-
-.logo-text {
-  color: black;
-  font-size: 20px;
-  width: 400px;
-  margin-left: 15px;
-  line-height: 23px;
-}
-
-.logo-text-ros {
-  font-size: 60px;
-  line-height: 63px;
+.bankY:hover {
+  cursor: pointer;
 }
 
 .help-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 30px 30px 0 30px;
+  margin: 15px 30px 0 30px;
 }
 
 .box {
@@ -191,6 +110,10 @@ body {
   margin-left: 5%;
   margin-top: 10px;
   font-size: 35px;
+}
+
+#lbo27:hover {
+  cursor: pointer;
 }
 
 .s27__inside {
@@ -355,7 +278,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .highcharts-data-table table {
@@ -577,38 +500,6 @@ body {
     margin: 0;
   }
 
-  .logo-image {
-    width: 100px;
-    height: 78px;
-    background-size: 75px 75px;
-    background-position: 0px 2.5px;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
-  .logo-image:after {
-    top: 53px;
-    left: 81px;
-    height: 25px;
-    width: 156px;
-  }
-
-  .logo {
-    display: flex;
-  }
-
-  .logo-text {
-    font-size: 12px;
-    width: 250px;
-    margin-left: 5px;
-    line-height: 13px;
-  }
-
-  .logo-text-ros {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
   .help-box {
     margin: 15px 5px 15px 5px;
   }
@@ -660,7 +551,7 @@ body {
 
   .typeP {
     line-height: 0;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0;
   }
 
@@ -795,6 +686,39 @@ body {
   .help-box2 {
     padding-top: 5px;
   }
+
+  .buttonGraf {
+    margin-left: 0;
+  }
+
+  .bank {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 5px;
+  }
+
+  .bankY {
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-right: 5px;
+    line-height: 25px;
+  }
+
+  .bankR {
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: 9px;
+    line-height: 25px;
+  }
+
+  .buttonGraf {
+    width: 45%;
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 812px) and (max-width: 1280px) {
@@ -836,7 +760,7 @@ body {
   }
 
   .help-box {
-    margin: 30px 15px 30px 15px;
+    margin: 15px;
   }
 
   .lbo::before {
@@ -999,6 +923,17 @@ body {
 
   #numberQLead {
     margin-left: 50px;
+  }
+
+  .buttonGraf {
+    margin-left: 0;
+    width: 150px;
+  }
+
+  .bank {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 70px;
   }
 }
 

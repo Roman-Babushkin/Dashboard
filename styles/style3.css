@@ -1,13 +1,13 @@
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Regular.ttf');
+  src: url('./fonts/Bitter-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Bitter;
-  src: url('../fonts/Bitter-Black.ttf');
+  src: url('./fonts/Bitter-Black.ttf');
   font-weight: bold;
   font-style: normal;
 }
@@ -17,6 +17,13 @@ body {
   background-color: rgba(192, 192, 192, 0.2);
   font-family: Bitter;
   font-weight: normal;
+}
+
+.scroll-table {
+  height: 400px;
+  overflow: auto;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .help-box {
@@ -190,7 +197,6 @@ table {
   border-collapse: collapse;
   width: 97%;
   height: 400px;
-  margin-top: 40px;
   margin-left: 30px;
   overflow: hidden;
   border-radius: 15px;
@@ -284,7 +290,7 @@ td {
   text-align: center;
   border-radius: 15px;
   margin-left: 30px;
-  background-color: rgba(37, 155, 209,0.2);
+  background-color: rgba(37, 155, 209, 0.2);
 }
 
 .color5 {
@@ -297,6 +303,10 @@ td {
   border-radius: 15px;
   margin-left: 30px;
   background-color: lightgrey;
+}
+
+#obj1:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 567px) {
@@ -335,7 +345,7 @@ td {
 @media (min-width: 567px) and (max-width: 811px) {
 
   .help-box {
-    margin: 15px 15px 0 15px;
+    margin: 15px 5px 0 5px;
   }
 
   .box {
@@ -419,7 +429,7 @@ td {
   .lbo__inside-27::before {
     font-size: 20px;
     margin-top: -8px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
   .lbo__inside-32::before {
@@ -442,8 +452,11 @@ td {
     border-collapse: collapse;
     width: 98%;
     height: 400px;
-    margin-top: 20px;
-    margin-left: 1%;
+    margin-left: 0;
+  }
+
+  .scroll-table {
+    margin-left: 15px;
   }
 
   th {
@@ -552,7 +565,7 @@ td {
   .number {
     line-height: 30px;
     font-size: 16px;
-    margin-left: 2px; 
+    margin-left: 2px;
   }
 
   .sline {
@@ -601,8 +614,12 @@ td {
     border-collapse: collapse;
     width: 98%;
     height: 400px;
-    margin-top: 20px;
-    margin-left: 1%;
+    margin-left: 0;
+  }
+
+  .scroll-table {
+    margin-left: 15px;
+    margin-top: 15px;
   }
 
   th {
