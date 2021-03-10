@@ -24,6 +24,10 @@ document.getElementById("back").onclick = function() {
   window.location.href = 'index.html';
 }
 
+document.getElementById("obj1").onclick = function() {
+  window.location.href = 'object1SMR.html';
+}
+
 document.getElementById("contrSmr27").innerHTML = contrSmr27 + "%";
 
 document.getElementById("osvSmr27").innerHTML = osvSmr27;

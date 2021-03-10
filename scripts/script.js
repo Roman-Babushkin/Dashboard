@@ -1,6 +1,6 @@
-var DataGrafPlanPir = [150, 180, 250, 100, 280, 330, 350, 220, 250, 140, 310, 180];
+var DataGrafPlanPir = [250, 120, 350, 150, 180, 380, 250, 280, 150, 240, 210, 280];
 
-var DataGrafFaktPir = [120, 150, 280, 150, 200, 150, 250, 280];
+var DataGrafFaktPir = [220, 250, 120, 110, 300, 250, 150, 180];
 
 var DataGrafPlanPirNak = [150, 330, 580, 680, 960, 1290, 1640, 1860, 2110, 2250, 2560, 2740];
 
@@ -14,15 +14,30 @@ var DataGrafPlanSmrNak = [250, 530, 680, 880, 1260, 1490, 1740, 2060, 2210, 2450
 
 var DataGrafFaktSmrNak = [180, 430, 610, 860, 1130, 1310, 1540, 1820, 1960, 2160];
 
+var bankY = 9;
 
-var questionForLeader = `<p>Я узнал, что у меня</p>
-    <p>Есть ограмная семья</p>
-    <p>И тропинка и лесок</p>
-    <p>В поле каждый колосок</p>
-    <p>Речка, небо голубое -</p>
-    <p>Это все мое - родное</p>
-    <p>Это родина моя,</p>
-    <p>Всех люблю на свете я!</p>`;
+var bankR = 8;
+
+var bankGarantY = `<p>Объект 1</p>
+    <p>Объект 2</p>
+    <p>Объект 3</p>
+    <p>Объект 4</p>
+    <p>Объект 5</p>`;
+
+var bankGarantR = `<p>Объект 1</p>
+    <p>Объект 2</p>
+    <p>Объект 3</p>
+    <p>Объект 4</p>
+    <p>Объект 5</p>`;
+
+var questionForLeader = `<p>Вопрос 1</p>
+    <p>Вопрос 2</p>
+    <p>Вопрос 3</p>
+    <p>Вопрос 4</p>
+    <p>Вопрос 5</p>
+    <p>Вопрос 6</p>
+    <p>Вопрос 7</p>
+    <p>Вопрос 8</p>`;
 
 var numberQLead = 8;
 
@@ -34,6 +49,16 @@ var questionForMinistr = `<p>Вопрос для министра 1</p>
     <p>Вопрос для министра 6</p>
     <p>Вопрос для министра 7</p>
     <p>Вопрос для министра 8</p>`
+
+var lboInclude = `<p>Объект 1: 1300 млн. рублей</p>
+<p>Объект 2: 800 млн. рублей</p>
+<p>Объект 3: 300 млн.рублей</p>
+<p>Объект 4: 1000 млн. рублей</p>
+<p>Объект 5: 1200 млн. рублей</p>
+<p>Объект 6: 500 млн. рублей</p>
+<p>Объект 7: 250 млн. рублей</p>
+<p>Объект 8: 1150 млн. рублей</p>
+`
 
 var numberQMin = 8;
 
@@ -73,7 +98,6 @@ var doneSmr = 7;
 
 var lbo27 = 6500;
 
-
 var btn3 = document.getElementById("nakopPir");
 
 var btn4 = document.getElementById("normalPir");
@@ -84,55 +108,55 @@ var btn6 = document.getElementById("normalSmr");
 
 Highcharts.chart('container', {
 
+  title: {
+    text: 'План/факт по ГК ПИР'
+  },
+
+  yAxis: {
     title: {
-      text: 'План/факт по ГК ПИР'
-    },
-
-    yAxis: {
-      title: {
-        text: ""
-      }
-    },
-
-    xAxis: {
-      accessibility: {
-        rangeDescription: ''
-      }
-    },
-
-    plotOptions: {
-      series: {
-        label: {
-          connectorAllowed: false
-        },
-        pointStart: 1
-      }
-    },
-
-    series: [{
-      name: 'План',
-      data: DataGrafPlanPir
-    }, {
-      name: 'Факт',
-      data: DataGrafFaktPir
-    }],
-
-    responsive: {
-      rules: [{
-        condition: {
-          maxWidth: 500
-        },
-        chartOptions: {
-          legend: {
-            layout: 'horizontal',
-            align: 'center',
-            verticalAlign: 'bottom'
-          }
-        }
-      }]
+      text: ""
     }
+  },
 
-  });
+  xAxis: {
+    accessibility: {
+      rangeDescription: ''
+    }
+  },
+
+  plotOptions: {
+    series: {
+      label: {
+        connectorAllowed: false
+      },
+      pointStart: 1
+    }
+  },
+
+  series: [{
+    name: 'План',
+    data: DataGrafPlanPir
+  }, {
+    name: 'Факт',
+    data: DataGrafFaktPir
+  }],
+
+  responsive: {
+    rules: [{
+      condition: {
+        maxWidth: 500
+      },
+      chartOptions: {
+        legend: {
+          layout: 'horizontal',
+          align: 'center',
+          verticalAlign: 'bottom'
+        }
+      }
+    }]
+  }
+
+});
 
 btn3.onclick = function() {
 
@@ -299,113 +323,112 @@ Highcharts.chart('container2', {
 btn5.onclick = function() {
   Highcharts.chart('container2', {
 
-  title: {
-    text: 'План/факт по ГК СМР'
-  },
-
-  yAxis: {
     title: {
-      text: ""
-    }
-  },
+      text: 'План/факт по ГК СМР'
+    },
 
-  xAxis: {
-    accessibility: {
-      rangeDescription: ''
-    }
-  },
-
-  plotOptions: {
-    series: {
-      label: {
-        connectorAllowed: false
-      },
-      pointStart: 1
-    }
-  },
-
-  series: [{
-    name: 'План',
-    data: DataGrafPlanSmr
-  }, {
-    name: 'Факт',
-    data: DataGrafFaktSmr
-  }],
-
-  responsive: {
-    rules: [{
-      condition: {
-        maxWidth: 500
-      },
-      chartOptions: {
-        legend: {
-          layout: 'horizontal',
-          align: 'center',
-          verticalAlign: 'bottom'
-        }
+    yAxis: {
+      title: {
+        text: ""
       }
-    }]
-  }
+    },
 
-});
+    xAxis: {
+      accessibility: {
+        rangeDescription: ''
+      }
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1
+      }
+    },
+
+    series: [{
+      name: 'План',
+      data: DataGrafPlanSmr
+    }, {
+      name: 'Факт',
+      data: DataGrafFaktSmr
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
 }
 
 btn6.onclick = function() {
   Highcharts.chart('container2', {
 
-  title: {
-    text: 'План/факт по ГК СМР'
-  },
-
-  yAxis: {
     title: {
-      text: ""
-    }
-  },
+      text: 'План/факт по ГК СМР'
+    },
 
-  xAxis: {
-    accessibility: {
-      rangeDescription: ''
-    }
-  },
-
-  plotOptions: {
-    series: {
-      label: {
-        connectorAllowed: false
-      },
-      pointStart: 1
-    }
-  },
-
-  series: [{
-    name: 'План',
-    data: DataGrafPlanSmrNak
-  }, {
-    name: 'Факт',
-    data: DataGrafFaktSmrNak
-  }],
-
-  responsive: {
-    rules: [{
-      condition: {
-        maxWidth: 500
-      },
-      chartOptions: {
-        legend: {
-          layout: 'horizontal',
-          align: 'center',
-          verticalAlign: 'bottom'
-        }
+    yAxis: {
+      title: {
+        text: ""
       }
-    }]
-  }
+    },
 
-});
+    xAxis: {
+      accessibility: {
+        rangeDescription: ''
+      }
+    },
+
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
+        },
+        pointStart: 1
+      }
+    },
+
+    series: [{
+      name: 'План',
+      data: DataGrafPlanSmrNak
+    }, {
+      name: 'Факт',
+      data: DataGrafFaktSmrNak
+    }],
+
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
+        }
+      }]
+    }
+
+  });
 }
 
 var modal = document.getElementById('myModal');
-
 
 var btn1 = document.getElementById("button1");
 
@@ -416,6 +439,12 @@ var span = document.getElementsByClassName("close")[0];
 var modalName = document.getElementById("modal-name");
 
 var modalBody = document.getElementById("modal-body");
+
+var bankGarButY = document.getElementById("bankY");
+
+var bankGarButR = document.getElementById("bankR");
+
+var lbo27Btn = document.getElementById("lbo27");
 
 btn1.onclick = function() {
   modal.style.display = "block";
@@ -429,6 +458,23 @@ btn2.onclick = function() {
   modalBody.innerHTML = questionForMinistr;
 }
 
+bankGarButY.onclick = function() {
+  modal.style.display = "block";
+  modalName.innerHTML = "Банковская гарантия (осталось менее 30 дней)";
+  modalBody.innerHTML = bankGarantY;
+}
+
+bankGarButR.onclick = function() {
+  modal.style.display = "block";
+  modalName.innerHTML = "Банковская гарантия (осталось менее 15 дней)";
+  modalBody.innerHTML = bankGarantR;
+}
+
+lbo27Btn.onclick = function() {
+  modal.style.display = "block";
+  modalName.innerHTML = "Состав лимитов бюджетных обязательств 27";
+  modalBody.innerHTML = lboInclude;
+}
 
 span.onclick = function() {
   modal.style.display = "none";
@@ -456,6 +502,10 @@ gkSmr.onclick = function() {
 gkPir.onclick = function() {
   window.location.href = 'gkpir.html';
 }
+
+document.getElementById("bankY").innerHTML = bankY;
+
+document.getElementById("bankR").innerHTML = bankR;
 
 document.getElementById("numberQLead").innerHTML = numberQLead;
 
