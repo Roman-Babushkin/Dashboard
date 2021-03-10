@@ -1,0 +1,403 @@
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bitter;
+  src: url('../fonts/Bitter-Black.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(192, 192, 192, 0.2);
+  font-family: Bitter;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  display: inline;
+}
+
+.nameOfObject {
+  font-size: 60px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.help-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 98%;
+  margin: 1%;
+}
+
+.box {
+  width: 18%;
+  height: 150px;
+  border-radius: 15px;
+  background-color: white;
+  line-height: 40px;
+  font-size: 25px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.numberL {
+  color: rgb(37, 155, 209);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.number {
+  display: inline-block;
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.numberD {
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.numberDBox {
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+.numberDL {
+  color: rgb(37, 155, 209);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.sline {
+  display: inline-block;
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.typeP {
+  display: inline-block;
+  color: black;
+  font-weight: normal;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.typeB {
+  display: block;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.typeL {
+  font-size: 18px;
+  color: rgb(54, 85, 138);
+}
+
+.box-date {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.back {
+  margin-top: 20px;
+  margin-left: 34px;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 15px;
+}
+
+.back::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.back::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin-top: 4.5px;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.box2 {
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 24.5%;
+  height: 120px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 18px;
+  line-height: 23px;
+  box-sizing: border-box;
+}
+
+.kt {
+  width: 70%;
+  border-radius: 15px;
+  height: 50px;
+  margin-left: 15%;
+  margin-top: 15px;
+  font-size: 22px;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kt:hover {
+  cursor: pointer;
+}
+
+.procKt {
+  color: rgb(54, 85, 138);
+  font-weight: bold;
+}
+
+.kt_menu {
+  display: none;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 22px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+#kt8Line {
+  margin-bottom: 50px;
+}
+
+#kt_menu8 {
+  margin-top: -45px;
+}
+
+.kt_menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 40px;
+}
+
+span {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .help-box {
+    flex-wrap: wrap;
+  }
+
+  .nameOfObject {
+    font-size: 35px;
+  }
+
+  .number {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .box {
+    width: 45%;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    height: 95px;
+  }
+
+  .box-date {
+    font-size: 20px;
+  }
+
+  .typeP {
+    font-size: 15px;
+  }
+
+  .numberL {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .sline {
+    display: none;
+  }
+
+  .numberD {
+    font-size: 15px;
+  }
+
+  .numberDL {
+    font-size: 15px;
+  }
+
+  .box2 {
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 110px;
+    font-size: 13px;
+    line-height: 19px;
+    width: 45%;
+    margin-top: 5px;
+  }
+
+  .typeB {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .numberDBox {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .typeL {
+    font-size: 15px;
+  }
+
+  .kt {
+    font-size: 11px;
+    line-height: 25px;
+  }
+
+  .kt_menu {
+    font-size: 20px;
+  }
+
+  .procKt {
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+  .nameOfObject {
+    font-size: 45px;
+  }
+
+  .number {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .box {
+    font-size: 17px;
+    line-height: 17px;
+    height: 140px;
+  }
+
+  .box-date {
+    font-size: 23px;
+  }
+
+  .typeP {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .numberL {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .sline {
+    width: 47%;
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .numberD {
+    display: block;
+    margin: 0;
+    line-height: 17px;
+    font-size: 17px;
+  }
+
+  .numberDL {
+    display: block;
+    margin: 0;
+    line-height: 17px;
+    font-size: 17px;
+  }
+
+  .box-date {
+    font-size: 18px;
+  }
+
+  .box2 {
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 140px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .typeB {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .numberDBox {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .typeL {
+    font-size: 15px;
+  }
+
+  .kt {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .kt_menu {
+    font-size: 20px;
+  }
+
+  .procKt {
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1800px) {
+  .box {
+    height: 180px;
+  }
+}
